@@ -1,21 +1,17 @@
 content:
-  root: content
+  - name: docs
+    label: Dokümantasyon
+    type: collection
+    path: docs
+    format: yaml-frontmatter
 
-collections:
-  docs:
-    label: Docs
-    folder: content/docs
-    create: true
-    format: frontmatter
     fields:
       - name: title
-        label: Title
+        label: Başlık
         type: string
-        required: true
 
-      - name: description
-        label: Description
-        type: string
-        required: false
+      - name: body
+        label: İçerik
+        type: rich-text
 
-      - name: weight
+
