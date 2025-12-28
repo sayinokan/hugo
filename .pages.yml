@@ -8,23 +8,14 @@ collections:
     create: true
     format: frontmatter
     fields:
-      title:
+      - name: title
         label: Title
         type: string
         required: true
 
-      description:
+      - name: description
         label: Description
         type: string
         required: false
 
-      weight:
-        label: Weight
-        type: number
-        required: false
-
-      body:
-        label: Content
-        type: markdown
-        required: true
-
+      - name: weight
