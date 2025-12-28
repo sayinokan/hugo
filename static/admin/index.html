@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin</title>
+  <script src="https://unpkg.com/page-cms/dist/page-cms.js"></script>
+</head>
+<body>
+  <script>
+    new CMS({
+      root: "/",
+      media: {
+        folder: "static/uploads",
+        path: "/uploads"
+      },
+      collections: [
+        {
+          name: "docs",
+          label: "Dokümantasyon",
+          folder: "content/docs",
+          extension: "md",
+          fields: [
+            { name: "title", label: "Başlık" },
+            { name: "body", label: "İçerik", type: "markdown" }
+          ]
+        }
+      ]
+    })
+  </script>
+</body>
+</html>
+
