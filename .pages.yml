@@ -2,28 +2,29 @@ content:
   root: content
 
 collections:
-  - name: docs
+  docs:
     label: Docs
     folder: content/docs
     create: true
     format: frontmatter
     fields:
-      - name: title
+      title:
         label: Title
         type: string
         required: true
 
-      - name: description
+      description:
         label: Description
         type: string
         required: false
 
-      - name: weight
+      weight:
         label: Weight
         type: number
         required: false
 
-      - name: body
+      body:
         label: Content
         type: markdown
         required: true
+
